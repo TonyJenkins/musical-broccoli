@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.match-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.team.england {
+    background: #CE1124;
+    color: white;
+}
+
+.team.australia {
+    background: #FFD100;
+    color: #005825;
+}
+
+.vs {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.match-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 2.5rem;
+}
+
+.detail-content h3 {
+    color: #1e3c72;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.detail-content p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.promo-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.promo-section h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.promo-section > p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.highlight-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: scale(1.05);
+}
+
+.highlight-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.highlight-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cta-section {
+    text-align: center;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 50px 20px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: white;
+    color: #f5576c;
+    border: none;
+    padding: 18px 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+    transform: translateY(-1px);
+}
+
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .team {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+    }
+    
+    .vs {
+        font-size: 1.5rem;
+    }
+    
+    .promo-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-button {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+    }
+}
